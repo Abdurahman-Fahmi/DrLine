@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "612413401318",
+    "project_id": "dr-line-a321b",
+    "storage_bucket": "dr-line-a321b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612413401318:android:0b49c537ea84daf52bf327",
+        "android_client_info": {
+          "package_name": "com.caberz.drline"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUn8qIFRhpRU8c0tV-EdAdiLTuTk5A0Kk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

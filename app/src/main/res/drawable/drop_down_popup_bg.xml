@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/drop_down_bg_2" />
+    <item
+        android:width="12dp"
+        android:height="12dp"
+        android:drawable="@drawable/ic_arrow_up"
+        android:gravity="top|end"
+        android:right="@dimen/_8sdp"
+        android:top="@dimen/_4sdp" />
+</layer-list>

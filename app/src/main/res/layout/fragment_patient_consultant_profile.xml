@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/consultant_profile_background"
+        android:padding="20dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-109dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_profile_cut_1"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_back_details_profile"
+        app:layout_constraintStart_toStartOf="@+id/gl1"
+        app:layout_constraintTop_toTopOf="@+id/gl4" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_chat_2"
+        app:layout_constraintEnd_toStartOf="@+id/gl2"
+        app:layout_constraintTop_toTopOf="@+id/gl4" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLanguage"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/ic_lang_bg"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/ar"
+        android:textAllCaps="false"
+        android:textColor="#7DC8C6"
+        android:textSize="@dimen/_10ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/gl2"
+        app:layout_constraintTop_toBottomOf="@+id/ivChat" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivProfile2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_ellipse_profile"
+        app:layout_constraintEnd_toStartOf="@+id/gl2"
+        app:layout_constraintStart_toStartOf="@+id/gl1"
+        app:layout_constraintTop_toBottomOf="@+id/ivBack" />
+
+    <com.wecareapp.android.customviews.CircleImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_clinic_doctor"
+        app:layout_constraintBottom_toBottomOf="@+id/ivProfile2"
+        app:layout_constraintEnd_toEndOf="@+id/ivProfile2"
+        app:layout_constraintStart_toStartOf="@+id/ivProfile2"
+        app:layout_constraintTop_toBottomOf="@+id/ivBack"
+        app:layout_constraintTop_toTopOf="@id/ivProfile2" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvClinicName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/gl2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gl1"
+        app:layout_constraintTop_toBottomOf="@+id/ivProfile2"
+        tools:text="Holy Medical Clinic" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCategoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:clickable="false"
+        android:enabled="false"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="@id/gl2"
+        app:layout_constraintStart_toStartOf="@+id/gl1"
+        app:layout_constraintTop_toBottomOf="@+id/tvClinicName"
+        tools:text="Makkah, KSA" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="@id/gl2"
+        app:layout_constraintStart_toStartOf="@+id/gl1"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategoryName"
+        tools:text="Makkah, KSA" />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/appCompatRatingBar2"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:numStars="5"
+        android:progressTint="@color/white"
+        android:rating="0"
+        android:stepSize="0.5"
+        app:layout_constraintEnd_toStartOf="@+id/gl2"
+        app:layout_constraintStart_toStartOf="@+id/gl1"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocation" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvClinicLocation12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:gravity="center"
+        android:text="@string/about_me"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@id/gl2"
+        app:layout_constraintStart_toStartOf="@+id/gl1"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatRatingBar2" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAbout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toTopOf="@+id/llMakeAppointment"
+        app:layout_constraintEnd_toEndOf="@id/gl2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/gl1"
+        app:layout_constraintTop_toBottomOf="@+id/tvClinicLocation12"
+        tools:text="About" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBottomBackground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:background="@drawable/ic_bottom_backbround_consultant"
+        android:maxHeight="@dimen/_300sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/llMakeAppointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_logout_2"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/ivBottomBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivBottomBackground"
+        app:layout_constraintVertical_bias="0.402">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivAppointmentIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_calender"
+            android:backgroundTint="@color/white"
+            android:tint="@color/white"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/ivBottomBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivBottomBackground"
+            app:layout_constraintVertical_bias="0.402"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAppointmentLabel"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="SAR0/h"
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/gl2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/gl1"
+            app:layout_constraintTop_toBottomOf="@+id/ivProfile2" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ibB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:background="@drawable/ic_balance_bg"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/gl2"
+        app:layout_constraintTop_toBottomOf="@+id/llMakeAppointment" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:background="@drawable/ic_logout_4"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/gl2"
+        app:layout_constraintTop_toBottomOf="@+id/ibB" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView22"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:background="@drawable/ic_logout_3"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLogout"
+        app:layout_constraintEnd_toStartOf="@+id/gl2"
+        app:layout_constraintStart_toStartOf="@+id/ivLogout"
+        app:layout_constraintTop_toTopOf="@+id/ivLogout" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivAvailableTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/ic_background_dr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ivLogout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/gl1"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView2" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSpendsCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvSpendsL"
+        app:layout_constraintEnd_toEndOf="@+id/ivAvailableTime"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/appCompatImageView4"
+        app:layout_constraintTop_toTopOf="@+id/ivAvailableTime"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="11:00am - 3:00pm" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSpendsL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/available_time"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_9ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivAvailableTime"
+        app:layout_constraintEnd_toEndOf="@+id/tvSpendsCount"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tvSpendsCount"
+        app:layout_constraintTop_toBottomOf="@+id/tvSpendsCount" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_background_dr"
+        app:layout_constraintBottom_toTopOf="@+id/ivAvailableTime"
+        app:layout_constraintEnd_toStartOf="@+id/ibB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/gl1"
+        app:layout_constraintTop_toBottomOf="@+id/llMakeAppointment"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:background="@drawable/ic_sethascope_v"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView2"
+        app:layout_constraintStart_toStartOf="@+id/gl1"
+        app:layout_constraintTop_toTopOf="@+id/appCompatImageView2" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:background="@drawable/ic_time_v"
+        app:layout_constraintBottom_toBottomOf="@+id/ivAvailableTime"
+        app:layout_constraintStart_toStartOf="@+id/gl1"
+        app:layout_constraintTop_toTopOf="@+id/ivAvailableTime" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAppCmpCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:text="0"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvAppCmpCmpL"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatImageView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/appCompatImageView3"
+        app:layout_constraintTop_toTopOf="@+id/appCompatImageView2"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAppCmpCmpL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:maxLines="1"
+        android:text="Total Consultations"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_9ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView2"
+        app:layout_constraintEnd_toEndOf="@+id/tvAppCmpCount"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tvAppCmpCount"
+        app:layout_constraintTop_toBottomOf="@+id/tvAppCmpCount" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAppCmpCount2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:text="$51"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvAppCmpCmpL"
+        app:layout_constraintEnd_toStartOf="@+id/gl2"
+        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintStart_toStartOf="@+id/ibB"
+        app:layout_constraintTop_toTopOf="@+id/appCompatImageView2"
+        app:layout_constraintVertical_bias="0.631"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAppCmpCmpL2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="Balance"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_9ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView2"
+        app:layout_constraintEnd_toStartOf="@+id/gl2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tvAppCmpCount2"
+        app:layout_constraintTop_toBottomOf="@+id/tvAppCmpCount" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appCompatImageView8" />
+</androidx.constraintlayout.widget.ConstraintLayout>

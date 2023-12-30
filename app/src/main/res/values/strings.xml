@@ -1,0 +1,217 @@
+<resources>
+    <string name="app_name">DrLine</string>
+    <string name="get_started">Get Started</string>
+    <string name="facebook_app_id" translatable="false">424778728629255</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb424778728629255</string>
+
+
+    <string name="back4app_server_url" translatable="false">https://parseapi.back4app.com/</string>
+
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id" translatable="false">Kav84xZzDLq9JgoMXaviqtUUNz1e42VrttWtzHo5</string>
+    <string name="back4app_client_key" translatable="false">HwSOBCCBJ23bHWJM9bNp9gwCnHDC2gYLCXT1KjNB</string>
+
+    <string name="twitter_consumer_key" translatable="false">MIGcnB5Qgvls21PL7rclCIchW</string>
+    <string name="twitter_consumer_secret" translatable="false">z8HXPQsosKO9qY4j6VJ4Yxa32l4URlc5PG1UT5LRKY3tKbz8aN</string>
+
+    <string name="agora_app_id" translatable="false">ac077d88caab4a228d1780e5791aa04b</string>
+    <!-- Obtain a temp Access Token at https://dashboard.agora.io -->
+    <!-- You will need to deploy your own token server for production release -->
+    <!-- Leave this value empty if Security keys/Token is not enabled for your project -->
+    <string name="agora_access_token" translatable="false">006ac077d88caab4a228d1780e5791aa04bIACIVU9zh0ZiC8bzFnWi4uwcVVj3SJBS+b8XMUPx5zayGqo05VEAAAAAEAAdwi3RFtpDYAEAAQAS2kNg</string>
+
+    <string name="privacy_policy_link" translatable="false">https://drline.app/privacy-policy.html</string>
+    <string name="tc_link" translatable="false">http://drline.app/terms-and-conditions.html</string>
+    <string name="find_your_doctors">Find your Doctors</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="skip">Skip</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="don_t_have_account">Don\'t have account?</string>
+    <string name="sign_up_u"><u>Sign Up</u></string>
+    <string name="welcome">Welcome</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email_or_contact">Email or Contact</string>
+    <string name="password">Password</string>
+    <string name="home">Home</string>
+    <string name="notification">Notification</string>
+    <string name="chat">Chat</string>
+    <string name="appointment">Appointment</string>
+    <string name="profile">Profile</string>
+    <string name="consultant">Consultant</string>
+    <string name="near_me">Near Me</string>
+    <string name="online">Online</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="search">Search</string>
+    <string name="top_doctors">Top Doctors</string>
+    <string name="services">Services</string>
+    <string name="add_reminder">Add Reminder</string>
+    <string name="end_amp_review"><![CDATA[End & Review]]></string>
+    <string name="total_appt">Total Appt.</string>
+    <string name="total_spends">Total Spends</string>
+    <string name="appointment_completed">Appointment Completed</string>
+    <string name="about_me">About me</string>
+    <string name="available_time">Available Time</string>
+    <string name="already_have_account">Already have account?</string>
+    <string name="sign_in_u"><u>Sign In</u></string>
+    <string name="clinic">Clinic</string>
+    <string name="patient">Patient</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="consult_about">Consult About</string>
+    <string name="certificate">Certificate</string>
+    <string name="balance">Balance</string>
+    <string name="err_msg_please_enter_email">Please enter email or contact</string>
+    <string name="err_msg_please_enter_password">Please enter password</string>
+    <string name="ok">Ok</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="type_message_here">Type message here</string>
+    <string name="cash_out">Cash out</string>
+    <string name="recent_appointments">Recent Appointments</string>
+    <string name="clinics">Clinics</string>
+    <string name="msg_please_wait_registering">Please wait registering…</string>
+    <string name="err_msg_oops_something_went_to_wrong">Oops! Something went to wrong</string>
+    <string name="verify">Verify</string>
+    <string name="otp">OTP</string>
+    <string name="resend_now_u"><u>Resend Now</u></string>
+    <string name="did_not_received_code">Didn\'t received code?</string>
+    <string name="msg_please_wait_verifying">Please wait verifying…</string>
+    <string name="msg_success_reg">Successfully registered</string>
+    <string name="go_to_settings">Go to Settings</string>
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="msg_please_wait_resending_otp">Please wait resending OTP</string>
+    <string name="msg_sent_to_your_contact">Sent to your contact</string>
+    <string name="forgot_password_q">Forgot Password ?</string>
+    <string name="forgot">Forgot</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="change">Change</string>
+    <string name="create_password">Create Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="err_msg_please_enter_email_contact">Please enter Email or Contact</string>
+    <string name="msg_please_wait">Please wait…</string>
+    <string name="err_msg_please_enter_old_password">Please enter old password</string>
+    <string name="err_msg_please_enter_new_password">Please enter new password</string>
+    <string name="err_msg_please_enter_confirm_password">Please enter confirm password</string>
+    <string name="err_msg_new_confirm_pwd_not_matched">New password and Confirm password not matched</string>
+    <string name="err_msg_plz_check_internet">Oops! Please check your internet connection</string>
+    <string name="no_data">No Data</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="select_date">Select Date</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="account_title">Account Title</string>
+    <string name="account_type">Account Type</string>
+    <string name="amount">Amount</string>
+    <string name="prices_are_exclusive_of_tax">*Prices are exclusive of tax.</string>
+    <string name="pricing">Pricing</string>
+    <string name="pay">Pay</string>
+    <string name="for_n_hours">For 2 hours</string>
+    <string name="thank_you">Thank you</string>
+    <string name="cancel">Cancel</string>
+    <string name="continue_btn">Continue</string>
+    <string name="term_condition_message"><![CDATA[By continuing, you\'re agreed to our \n Terms &amp; Conditions and Privacy Policy]]></string>
+    <string name="msg_please_wait_logging">Please wait… Logging</string>
+    <string name="msg_do_you_want_exit">Do you want to Exit?</string>
+    <string name="msg_membership_expiry">Your are already subscribed. Your membership expiry date is %s</string>
+    <string name="err_msg_plz_enter_full_name">Please Enter Full Name</string>
+    <string name="err_msg_plz_about_should_not_empty">About should not empty</string>
+    <string name="err_msg_plz_choose_certificate">Please choose certificate</string>
+    <string name="total_consultations">Total Consultations</string>
+    <string name="select_category">Select Category</string>
+    <string name="about_consultant">About Consultant</string>
+    <string name="set_available_time">Set Available Time</string>
+    <string name="hourly_rate">hourly rate</string>
+    <string name="add">Add</string>
+    <string name="done">Done</string>
+    <string name="share_your_experience_here">Share your experience here</string>
+    <string name="err_please_enter_message">Please enter message</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="boost_my_profile">Boost My Profile</string>
+    <string name="purchase">Purchase</string>
+    <string name="category_name">Category Name</string>
+    <string name="add_category_list">Add Category List</string>
+    <string name="add_new_service">Add New Service</string>
+    <string name="select_picture">Select Picture</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="enter_hourly_rate">Enter hourly rate</string>
+    <string name="wish_good_afternoon">Good afternoon</string>
+    <string name="wish_good_morning">Good morning</string>
+    <string name="wish_good_evening">Good evening</string>
+    <string name="wish_good_night">Good night</string>
+    <string name="default_notification_channel_id">default</string>
+    <string name="fcm_message">msg</string>
+    <string name="iban">IBAN</string>
+    <string name="swift_code">Swift Code</string>
+    <string name="account_number">Account Number</string>
+    <string name="account_holder_name">Account Holder Name</string>
+    <string name="call_connecting">Connecting…</string>
+    <string name="msg_profile_updated_successfully">Profile updated successfully</string>
+    <string name="clinic_name">Clinic Name</string>
+    <string name="clinic_location">Clinic Location</string>
+    <string name="location">Location</string>
+    <string name="enter_here">Enter here</string>
+    <string name="err_msg_oops_plz_book_ur_slot">Oops! Please book your slot</string>
+    <string name="image">Image</string>
+    <string name="book_now">Book now</string>
+    <string name="appointment_request">Appointment Request</string>
+    <string name="paid">Paid</string>
+    <string name="pending">Pending</string>
+    <string name="accepted">Accepted</string>
+    <string name="rejected">Rejected</string>
+    <string name="payment_success">Payment success</string>
+    <string name="payment_failed">Payment failed</string>
+    <string name="splash_instraction">Find Doctors, take an appointment, chat, calling</string>
+    <string name="no_account">No account</string>
+    <string name="error">Error</string>
+    <string name="no_code_received">No code received</string>
+    <string name="verification">Verification</string>
+    <string name="hour">hour</string>
+    <string name="show">Show</string>
+    <string name="new_meeage">New message</string>
+    <string name="transactions">Transactions</string>
+    <string name="no_contacts">No contacts</string>
+    <string name="no_appointments">No appointments</string>
+    <string name="call">Call</string>
+    <string name="english">English</string>
+    <string name="arabic">Arabic</string>
+    <string name="en">EN</string>
+    <string name="ar">AR</string>
+    <string name="err_msg_no_appointments">No appointments</string>
+    <string name="err_msg_please_enter_otp">Please enter OTP</string>
+    <string name="try_again">Try Again!</string>
+    <string name="msg_success_change">Successfully changed</string>
+    <string name="select_your_service">Select Service</string>
+    <string name="select">Select</string>
+    <string name="err_msg_please_select_service">Please select service</string>
+    <string name="err_msg_confirm_pwd_mat">Confirm Password not matched</string>
+    <string name="select_certificate">Select certificate</string>
+    <string name="err_msg_please_select_category">Please select category</string>
+    <string name="err_msg_no_appointment_on_this_time">No appointment available at this time</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="your_reminder_reg">Remider added</string>
+    <string name="select_a_document_type">Select a Document type</string>
+
+    <string-array name="category_list">
+        <item>Dr.Line consulting</item>
+        <item>Clinic</item>
+        <item>Consultation</item>
+        <item>Pharmacy</item>
+        <item>Insurance</item>
+        <item>Medical Tourism</item>
+        <item>Labs and X-rays</item>
+    </string-array>
+</resources>

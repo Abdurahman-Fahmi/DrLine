@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7DC8C6</color>
+    <color name="colorPrimaryDark">#6484AC</color>
+    <color name="colorAccent">#8B63AE</color>
+    <color name="clinic_color_accent">#6484AC</color>
+    <color name="white">#FFF</color>
+    <color name="grey">#707070</color>
+    <color name="cream">#F4F4F4</color>
+    <color name="background_transparent">#337DC8C6</color>
+    <color name="patient_doctor_header">#6484AC</color>
+    <color name="time_slot">#6484AC</color>
+    <color name="green_22">#00EEC1</color>
+</resources>

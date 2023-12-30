@@ -1,0 +1,218 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    viewBinding {
+        enabled = true
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\Owner\\AndroidStudioProjects\\WeCare\\drline.jks')
+            storePassword '123456'
+            keyAlias 'drline'
+            keyPassword '123456'
+        }
+    }
+    compileSdkVersion 33
+    buildToolsVersion '30.0.3'
+
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.caberz.drline"
+//        applicationId "com.caberz.drlineapp"
+        minSdkVersion 24
+        targetSdkVersion 33
+        versionCode 32
+        versionName "0.3.2"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.release
+    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        // Flag to enable support for the new language APIs
+//        coreLibraryDesugaringEnabled true
+        // Sets Java compatibility to Java 8
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    android {
+        lintOptions {
+            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+            abortOnError false
+        }
+    }
+
+    //... removed for brevity
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    def retrofit_version = "2.8.1"
+    def coroutines_version = "1.3.7"
+    def lifecycle_version = "2.3.1"
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+
+    // RecyclerView and CardView
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    // For control over item selection of both touch and mouse driven selection
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation "androidx.preference:preference-ktx:1.1.1"
+    implementation 'androidx.lifecycle:lifecycle-process:2.3.1'
+
+    // Scalable DP
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    implementation 'com.facebook.stetho:stetho:1.5.1'
+
+    // OTP
+    implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.0.3'
+
+
+    // ReactiveX
+    implementation "io.reactivex.rxjava2:rxjava:2.2.9"
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
+    implementation "com.jakewharton.rxbinding2:rxbinding:2.0.0"
+
+    implementation "com.squareup.okhttp3:okhttp-urlconnection:4.9.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
+
+    // EventBus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'com.google.android.material:material:1.4.0'
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
+    kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+
+    implementation 'com.github.javiersantos:BottomDialogs:1.2.1'
+
+    implementation "com.karumi:dexter:5.0.0"
+    implementation 'com.github.HamidrezaAmz:MagicalExoPlayer:1.0.15'
+
+    // Chunk
+    debugImplementation 'com.readystatesoftware.chuck:library:1.1.0'
+    releaseImplementation 'com.readystatesoftware.chuck:library-no-op:1.1.0'
+
+    // Glide - image processing library
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    kapt 'com.github.bumptech.glide:compiler:4.10.0'
+
+    implementation 'com.google.firebase:firebase-analytics:19.0.1'
+    implementation 'com.google.firebase:firebase-crashlytics:18.2.1'
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+
+    implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.0.3'
+
+    implementation 'devs.mulham.horizontalcalendar:horizontalcalendar:1.3.4'
+
+    implementation 'com.joooonho:selectableroundedimageview:1.0.1'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    implementation 'com.github.kizitonwose:CalendarView:0.4.5'
+
+    implementation 'com.voximplant:voximplant-sdk:2.16.1'
+
+//    implementation 'com.chaos.view:pinview:1.4.3'
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.0'
+
+    implementation 'com.github.parse-community:ParseTwitterUtils-Android:1.13.0'
+    implementation 'com.twitter.sdk.android:twitter:3.1.1'
+    implementation 'com.facebook.android:facebook-login:5.15.3'
+
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.5.1'
+
+//    implementation 'com.github.PuffoCyano:Range-Time-Picker-Dialog:v1.8'
+    implementation 'com.github.KarthikKompelli:Start-End-TimePicker-Dialog:1.2'
+
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:26.0.0')
+
+    // Add the dependency for the Firebase SDK for Google Analytics
+    // When using the BoM, don't specify versions in Firebase dependencies
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    // Declare the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-auth-ktx'
+
+    // Declare the dependency for the Cloud Storage library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-storage'
+
+    // Add the dependencies for any other desired Firebase products
+    // https://firebase.google.com/docs/android/setup#available-libraries
+
+    debugImplementation('com.github.ajitsing:sherlock:1.0.4@aar') {
+        transitive = true
+    }
+    releaseImplementation('com.github.ajitsing:sherlock-no-op:1.0.4@aar')
+
+    implementation 'io.agora.rtc:full-sdk:3.3.0'
+    implementation 'io.agora:agoraplayer:1.2.2'
+
+    implementation 'com.amitshekhar.android:jackson-android-networking:1.0.2'
+
+    implementation 'q.rorbin:badgeview:1.1.3'
+
+    implementation 'com.github.prolificinteractive:material-calendarview:2.0.1'
+}
+//keytool -list -v -keystore drline.jks -alias drline -storepass 123456 -keypass 123456
